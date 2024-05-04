@@ -1,3 +1,4 @@
+'use client';
 import WindowIcon from '@mui/icons-material/Window';
 import LayoutContainer from '../layout-container';
 import HeaderLogo from './HeaderLogo';
@@ -13,7 +14,7 @@ import {
 import AppLink from '@/components/common/AppLink';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { signOut, useSession } from 'next-auth/react';
+// import { signOut, useSession } from 'next-auth/react';
 import SkeletonImage from '@/components/common/SkeletonImage';
 import { useEffect, useRef, useState } from 'react';
 import { useAuthContext } from '@/contexts/AuthContext';
@@ -21,7 +22,7 @@ import { useAuthContext } from '@/contexts/AuthContext';
 const Header = () => {
   const auth = useAuthContext();
   console.log(auth);
-  const { data, status } = useSession();
+  // const { data, status } = useSession();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -65,7 +66,7 @@ const Header = () => {
               </ListItem>
             </List>
           </Box>
-          <Box
+          {/* <Box
             sx={{
               display: 'flex',
               alignItems: 'center',
@@ -173,7 +174,7 @@ const Header = () => {
             )}
 
             <SearchIcon sx={{ ml: 2 }} />
-          </Box>
+          </Box> */}
         </Box>
       </LayoutContainer>
     </>

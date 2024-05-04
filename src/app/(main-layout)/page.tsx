@@ -1,4 +1,7 @@
-// import Banner from '@/components/_pages/trang-chu/banner';
+'use client';
+
+import Banner from '@/components/_pages/trang-chu/banner';
+
 import Latest from '@/components/_pages/trang-chu/latest';
 // import Programming from '@/components/_pages/trang-chu/programming';
 import LayoutContainer from '@/components/sharing/layout-container';
@@ -9,7 +12,7 @@ const Homepage = () => {
   return (
     <LayoutContainer>
       <Box sx={{ py: 4 }}>
-        {/* <Banner /> */}
+        <Banner />
         <Box sx={{ mt: 3 }}>
           <Grid container spacing={4}>
             <Grid item xs={8}>

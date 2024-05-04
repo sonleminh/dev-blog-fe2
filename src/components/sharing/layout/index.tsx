@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Header from '../header';
 import Footer from '../footer';
@@ -31,7 +32,8 @@ const Layout = ({ children }: LayoutType) => {
           borderRadius: 2,
           cursor: 'pointer',
         }}
-        onClick={context.toggleColorMode}>
+        // onClick={context.toggleColorMode}
+      >
         {theme.palette.mode === 'light' ? (
           <Brightness3Icon sx={{ fontSize: 13 }} />
         ) : (

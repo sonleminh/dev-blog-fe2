@@ -1,9 +1,10 @@
+import Layout from '@/components/sharing/layout';
 import { Box, CssBaseline } from '@mui/material';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <CssBaseline />
       <body className={inter.className}>
         <Box sx={{ bgcolor: 'pink' }}>Header</Box>
-        <main>{children}</main>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
